@@ -36,7 +36,7 @@ Master end-to-end deep learning pipelines by fine-tuning state-of-the-art transf
 - **Architecture:** Encoder-only
 - **Task Type:** Sequence Classification
 - **Expected Accuracy:** 91-95% (depending on dataset)
-- **Training Time:** 30 min - 2 hours
+- **Training Time:** 10 min - 15 min
 
 **Key Features:**
 
@@ -62,7 +62,7 @@ Master end-to-end deep learning pipelines by fine-tuning state-of-the-art transf
 - **Dataset:** SQuAD v1.1
 - **Task Type:** Extractive QA (Generative)
 - **Expected F1:** 85-88%
-- **Training Time:** 2-3 hours
+- **Training Time:** 20-25 min
 
 **Key Features:**
 
