@@ -88,13 +88,10 @@ deep-learning-final-project/
 ├── requirements.txt
 ├── task-1/
 │   ├── notebooks/
-│   ├── reports/
 ├── task-2/
 │   ├── notebooks/
-│   ├── reports/
 └── task-3/
     ├── notebooks/
-    ├── reports/
 ```
 
 ## 🚀 Quick Start
@@ -113,9 +110,9 @@ cd deep-learning-final-project
 pip install -r requirements.txt
 
 # Or install per task
-cd finetuning-bert-text-classification && pip install -r requirements.txt
-cd finetuning-t5-question-answering && pip install -r requirements.txt
-cd finetuning-phi-2-text-summarization && pip install -r requirements.txt
+cd finetuning_distilbert_text_classification && pip install -r requirements.txt
+cd T5_QA_on_SQuAD && pip install -r requirements.txt
+cd finetuning_phi_2_text_summarization && pip install -r requirements.txt
 ```
 
 ### 3. Run Tasks
@@ -132,17 +129,6 @@ jupyter notebook notebooks/
 # Or run Python script
 python src/train.py
 ```
-
-## 📊 Results Summary
-
-| Task               | Model      | Dataset | Metric   | Score |
-| ------------------ | ---------- | ------- | -------- | ----- |
-| Classification     | BERT       | AG News | Accuracy | 94.5% |
-| Classification     | DistilBERT | AG News | Accuracy | 93.2% |
-| Question Answering | T5-base    | SQuAD   | F1       | 86.7% |
-| Question Answering | T5-base    | SQuAD   | EM       | 79.8% |
-| Summarization      | Phi-2      | XSum    | ROUGE-L  | 30.5% |
-| Summarization      | Phi-2      | XSum    | ROUGE-1  | 36.8% |
 
 ## 🔧 Technologies Used
 
@@ -174,8 +160,8 @@ python src/train.py
 
 ### Repository Naming
 
-- Task 1: `finetuning-distilbert-text-classification`, `finetuning_distilbert_nli`
-- Task 2: `finetuning-t5-question-answering`
+- Task 1: `finetuning-distilbert-text-classification`, `finetuning_distilbert_nli`, `finetuning_distilbert_go_emotions`
+- Task 2: `T5_QA_on_SQuAD`
 - Task 3: `finetuning-phi-2-text-summarization`
 
 ## 🌟 Project Highlights
