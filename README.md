@@ -2,7 +2,7 @@
 
 ## 📋 Project Overview
 
-This repository contains the complete implementation of three transformer model fine-tuning tasks for the Deep Learning course final project (UAS). The project demonstrates proficiency in working with different transformer architectures: Encoder (BERT), Encoder-Decoder (T5), and Decoder-only (Phi-2) models.
+This repository contains the complete implementation of three transformer model fine-tuning tasks for the Deep Learning course final project (UAS). The project demonstrates proficiency in working with different transformer architectures: Encoder (DistilBERT), Encoder-Decoder (T5), and Decoder-only (Phi-2) models.
 
 ## 👥 Team Information
 
@@ -20,15 +20,22 @@ Master end-to-end deep learning pipelines by fine-tuning state-of-the-art transf
 
 ## 📚 Tasks Overview
 
-### Task 1: BERT for Text Classification 🏷️
+### Task 1: DistilBERT for Text Classification 🏷️
 
-**Repository:** `task-1`
+**Directory:** `task-1/notebooks/`
+
+**Notebooks:**
+
+- `finetuning_distilbert_text_classification.ipynb` - General text classification task
+- `finetuning_distilbert_go_emotions.ipynb` - Emotion detection (GoEmotions dataset)
+- `finetuning_distilbert_nli.ipynb` - Natural Language Inference (MNLI dataset)
+
+**Details:**
 
 - **Model:** DistilBERT
 - **Architecture:** Encoder-only
-- **Dataset Options:** AG News, GoEmotions, MNLI
 - **Task Type:** Sequence Classification
-- **Expected Accuracy:** 91-95% (depending on dataset and model)
+- **Expected Accuracy:** 91-95% (depending on dataset)
 - **Training Time:** 30 min - 2 hours
 
 **Key Features:**
@@ -42,7 +49,13 @@ Master end-to-end deep learning pipelines by fine-tuning state-of-the-art transf
 
 ### Task 2: T5 for Question Answering ❓
 
-**Repository:** `task-2`
+**Directory:** `Task 2 (T5 QA on SQuAD)/`
+
+**Notebook:**
+
+- `T5_QA_on_SQuAD.ipynb` - Question answering on SQuAD dataset
+
+**Details:**
 
 - **Model:** T5-base
 - **Architecture:** Encoder-Decoder (Seq2Seq)
@@ -62,7 +75,13 @@ Master end-to-end deep learning pipelines by fine-tuning state-of-the-art transf
 
 ### Task 3: Phi-2 for Text Summarization 📝
 
-**Repository:** `task-3`
+**Directory:** `task-3/notebooks/`
+
+**Notebook:**
+
+- `finetuning_phi_2_text_summarization.ipynb` - Text summarization task
+
+**Details:**
 
 - **Model:** Phi-2 (2.7B parameters)
 - **Architecture:** Decoder-only (LLM)
@@ -83,15 +102,19 @@ Master end-to-end deep learning pipelines by fine-tuning state-of-the-art transf
 ## 🗂️ Repository Structure
 
 ```
-deep-learning-final-project/
+finalterm-dl/
 ├── README.md (this file)
 ├── requirements.txt
 ├── task-1/
-│   ├── notebooks/
-├── task-2/
-│   ├── notebooks/
+│   └── notebooks/
+│       ├── finetuning_distilbert_go_emotions.ipynb
+│       ├── finetuning_distilbert_nli.ipynb
+│       └── finetuning_distilbert_text_classification.ipynb
+├── Task 2 (T5 QA on SQuAD)/
+│   └── T5_QA_on_SQuAD.ipynb
 └── task-3/
-    ├── notebooks/
+    └── notebooks/
+        └── finetuning_phi_2_text_summarization.ipynb
 ```
 
 ## 🚀 Quick Start

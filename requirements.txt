@@ -1,35 +1,61 @@
-# Core Deep Learning Frameworks
+# ============================================================================
+# Core Deep Learning Frameworks - Required for all tasks
+# ============================================================================
 torch>=2.0.0
 torchvision>=0.15.0
 torchaudio>=2.0.0
 
-# Transformers and Model Libraries
+# ============================================================================
+# Transformers and Model Libraries - Required for all tasks
+# ============================================================================
 transformers>=4.35.0
 tokenizers>=0.15.0
 sentencepiece>=0.1.99
 protobuf>=3.20.0
 
-# Efficient Fine-tuning
+# ============================================================================
+# Efficient Fine-tuning - Required for Task 3 (Phi-2 with LoRA and quantization)
+# ============================================================================
 peft>=0.6.0
 bitsandbytes>=0.41.0
 accelerate>=0.24.0
 
-# Dataset Handling
+# ============================================================================
+# Dataset Handling - Required for all tasks
+# ============================================================================
 datasets>=2.14.0
 
-# Evaluation Metrics
+# ============================================================================
+# Evaluation Metrics - Required for all tasks
+# - evaluate: Evaluation metrics for all tasks
+# - rouge-score: ROUGE metrics for Task 3 (summarization)
+# - nltk: NLP utilities
+# - scikit-learn: Classification metrics for Task 1 (text classification)
+# ============================================================================
 evaluate>=0.4.0
 rouge-score>=0.1.2
 nltk>=3.8
 scikit-learn>=1.3.0
 
-# Data Processing and Analysis
+# ============================================================================
+# Data Processing and Analysis - Required for all tasks
+# ============================================================================
 numpy>=1.24.0
 pandas>=2.0.0
 
-# Visualization
+# ============================================================================
+# Visualization - Required for all tasks
+# ============================================================================
 matplotlib>=3.7.0
 seaborn>=0.12.0
 
+# ============================================================================
 # Progress Bars and Utilities
+# ============================================================================
 tqdm>=4.65.0
+
+# ============================================================================
+# Optional: Jupyter support for notebook environments
+# ============================================================================
+jupyter>=1.0.0
+ipywidgets>=8.0.0
